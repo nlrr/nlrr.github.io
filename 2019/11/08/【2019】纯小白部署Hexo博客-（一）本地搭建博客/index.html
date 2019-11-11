@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【2019】纯小白部署Hexo博客-（一）本地搭建博客 | NLRR&#39;S Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="NLRR's Blog" />
+  
+  <meta name="description" content="个人博客，也许是每个程序员、每个技术屌丝都想拥有的东西，虽然有些人（比如我）根本不知道搭建起来有什么用、有没有人看、会有什么利弊，但是搭建好了，心情总还是好的。">
+<meta name="keywords" content="hexo,github,blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【2019】纯小白部署Hexo博客-（一）本地搭建博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;nlrr.github.io&#x2F;2019&#x2F;11&#x2F;08&#x2F;%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;index.html">
+<meta property="og:site_name" content="NLRR&#39;S Blog">
+<meta property="og:description" content="个人博客，也许是每个程序员、每个技术屌丝都想拥有的东西，虽然有些人（比如我）根本不知道搭建起来有什么用、有没有人看、会有什么利弊，但是搭建好了，心情总还是好的。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;qEveO8b5Jx4CaPg.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;ElpaPUDQqm6Z1M8.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;Q2aihOCT5dnyksH.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;6XIdHTBC1GAobaY.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;3od5VxLpinJQmhz.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;pFfiGR9WBhrdbDa.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;uVxNpiW7TGcb2Ht.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;odmiGBITJzbManQ.png">
+<meta property="og:updated_time" content="2019-11-11T13:53:33.364Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;qEveO8b5Jx4CaPg.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">NLRR&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        NLRR&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注 WEB 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="NLRR" target="_blank" href="//nlrr.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-【2019】纯小白部署Hexo博客-（一）本地搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      【2019】纯小白部署Hexo博客-（一）本地搭建博客
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/hexo/">hexo</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-11-08
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p> 个人博客，也许是每个程序员、每个技术屌丝都想拥有的东西，虽然有些人（比如我）根本不知道搭建起来有什么用、有没有人看、会有什么利弊，但是搭建好了，心情总还是好的。</p>
+<a id="more"></a>
+
+
+<p><strong>小白也可以免费拥有自己的个人博客</strong></p>
+<p>个人博客，也许是每个程序员、每个技术屌丝都想拥有的东西，虽然有些人（比如我）根本不知道搭建起来有什么用、有没有人看、会有什么利弊，但是搭建好了，心情总还是好的。鉴于此，在以前研究的基础上，今天再重新来一次，和大家一起免费搭建一个属于自己的博客。</p>
+<h2 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h2><h4 id="电脑一台"><a href="#电脑一台" class="headerlink" title="电脑一台"></a>电脑一台</h4><ul>
+<li>win7、win10均可</li>
+<li>可联网</li>
+<li>能开机</li>
+<li>。。。</li>
+</ul>
+<h4 id="相关软件"><a href="#相关软件" class="headerlink" title="相关软件"></a>相关软件</h4><ul>
+<li>NodeJs（基础环境软件）</li>
+<li>Git Bash（基础环境软件）</li>
+<li>Notepad++（文本编辑工具）</li>
+<li>MarkdownPad 2（MD文件编辑工具）</li>
+<li>自己的域名（有了，可以彰显个性，没有的，也能实现效果）</li>
+<li>GitHub账号（最终博客部署到这里）</li>
+<li>图床（本来用的新浪微博的，现在好像不好用了）</li>
+</ul>
+<h2 id="搭建本地环境"><a href="#搭建本地环境" class="headerlink" title="搭建本地环境"></a>搭建本地环境</h2><h4 id="1-安装NodeJs"><a href="#1-安装NodeJs" class="headerlink" title="1.安装NodeJs"></a>1.安装NodeJs</h4><ul>
+<li>下载NodeJs，<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">点我下载</a>，下载的时候，选择LTS长期维护版就可以了。一路NEXT安装即可。</li>
+<li>安装完毕后，在CMD窗口下输入<code>node -v</code> 来查看版本。</li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/qEveO8b5Jx4CaPg.png" alt="1.nodejs版本.png"></p>
+<h4 id="2-安装Git-Bash"><a href="#2-安装Git-Bash" class="headerlink" title="2.安装Git Bash"></a>2.安装Git Bash</h4><ul>
+<li>下载Git，<a href="https://gitforwindows.org/" target="_blank" rel="noopener">点我下载</a>，下载的时候，网站会自动识别你的系统版本，32或者64位，保存文件就行。一路NEXT安装即可。</li>
+<li>安装完毕后，在CMD窗口下输入<code>node -v</code> 来查看版本。</li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/ElpaPUDQqm6Z1M8.png" alt="2.git安装完毕.png"></p>
+<h4 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h4><ul>
+<li>选择一个目录，用于存放你的博客文件，我的是D:\NewBlog，在该文件夹里，按住<code>Shift+鼠标右键</code>，点击在此处打开命令窗口，在弹出的命令窗口里，输入命令，修改npm镜像，换成淘宝的镜像，不然安装插件会很慢，或者安装不上。</li>
+<li><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/Q2aihOCT5dnyksH.png" alt="3.更换淘宝镜像.png"></p>
+<ul>
+<li>完成以后，输入命令，开始安装hexo</li>
+<li><code>cnpm install -g hexo-cli</code></li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/6XIdHTBC1GAobaY.png" alt="4.安装hexo-cli.png"></p>
+<ul>
+<li>成功后，输入命令，分别查看npm和hexo版本</li>
+<li><code>npm -v</code> 和 <code>hexo -v</code></li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/3od5VxLpinJQmhz.png" alt="5.npm和hexo版本.png"></p>
+<h4 id="4-部署本地hexo"><a href="#4-部署本地hexo" class="headerlink" title="4.部署本地hexo"></a>4.部署本地hexo</h4><ul>
+<li>仍然在刚才的文件夹里，点击鼠标右键，选择<code>Git Bash Here</code>，在弹出的命令窗口里输入<code>hexo init</code>进行初始化，初始化完成后，可以看到若干文件和文件夹。</li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/pFfiGR9WBhrdbDa.png" alt="6.hexo init成功.png"></p>
+<h4 id="5-测试本地效果"><a href="#5-测试本地效果" class="headerlink" title="5.测试本地效果"></a>5.测试本地效果</h4><ul>
+<li>依次输入，注意是依次，不是一次！！！一句一句的输入！！！</li>
+</ul>
+<ol>
+<li><code>hexo clean</code></li>
+<li><code>hexo generate</code></li>
+<li><code>hexo server</code></li>
+</ol>
+<p><img src="https://i.loli.net/2019/11/09/uVxNpiW7TGcb2Ht.png" alt="7.本地运行成功.png"></p>
+<ul>
+<li>然后打开浏览器，输入 <code>http://localhost:4000</code> 就能看到你的博客页面了。</li>
+</ul>
+<p><img src="https://i.loli.net/2019/11/09/odmiGBITJzbManQ.png" alt="8.本地打开效果.png"></p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年11月11日 21:53</p>
+        <p>原始链接： <a class="post-url" href="/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="【2019】纯小白部署Hexo博客-（一）本地搭建博客">http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a></p>
+        <footer>
+            <a href="http://nlrr.github.io">
+                <img src="/images/logo.png" alt="NLRR">
+                NLRR
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" target="_blank" rel="noopener" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=《【2019】纯小白部署Hexo博客-（一）本地搭建博客》 — NLRR'S Blog&pic=/images/banner.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=《【2019】纯小白部署Hexo博客-（一）本地搭建博客》 — NLRR'S Blog&source= 个人博客，也许是每个程序员、每个技术屌丝都想拥有的东西，虽然有些人（比如我）根本不知道搭建起来有什么用、有没有人看、会有什么利弊，但是搭建好了，心情总还..." data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【2019】纯小白部署Hexo博客-（一）本地搭建博客》 — NLRR'S Blog&url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&via=http://nlrr.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/hexo/" class="color5">hexo</a>
+      
+    <a href="/tags/github/" class="color2">github</a>
+      
+    <a href="/tags/blog/" class="color5">blog</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#需要准备的东西"><span class="post-toc-text">需要准备的东西</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#电脑一台"><span class="post-toc-text">电脑一台</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#相关软件"><span class="post-toc-text">相关软件</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#搭建本地环境"><span class="post-toc-text">搭建本地环境</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-安装NodeJs"><span class="post-toc-text">1.安装NodeJs</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-安装Git-Bash"><span class="post-toc-text">2.安装Git Bash</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-安装hexo"><span class="post-toc-text">3.安装hexo</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-部署本地hexo"><span class="post-toc-text">4.部署本地hexo</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-测试本地效果"><span class="post-toc-text">5.测试本地效果</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2019/11/11/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          Hello World
+        
+      </span>
+    </a>
+  
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 NLRR<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://nlrr.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/hexo/">hexo</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+        </div>
+    </div>
+    <a href="javascript:;" target="_blank" rel="noopener" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;" target="_blank" rel="noopener">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
