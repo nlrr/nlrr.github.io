@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【2019】纯小白部署Hexo博客-（二）修改主题模板 | NLRR&#39;S Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="NLRR's Blog" />
+  
+  <meta name="description" content="一个好看的模板，能让你的博客锦上添花，也使人赏心悦目。至于模板好看不好看，那就萝卜白菜，各有所爱了~">
+<meta name="keywords" content="hexo,github,blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【2019】纯小白部署Hexo博客-（二）修改主题模板">
+<meta property="og:url" content="http:&#x2F;&#x2F;nlrr.github.io&#x2F;2019&#x2F;11&#x2F;08&#x2F;%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF&#x2F;index.html">
+<meta property="og:site_name" content="NLRR&#39;S Blog">
+<meta property="og:description" content="一个好看的模板，能让你的博客锦上添花，也使人赏心悦目。至于模板好看不好看，那就萝卜白菜，各有所爱了~">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;IHkMUGB6ScsjO8o.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;y4tLvGUw3B7dJIT.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;7w8YZBWTGivK4uF.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;pzKcjRlDmhE9Ieb.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;rsO5bhZA2JuWC4H.png">
+<meta property="og:updated_time" content="2019-11-11T14:14:06.881Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;09&#x2F;IHkMUGB6ScsjO8o.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">NLRR&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        NLRR&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注 WEB 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="NLRR" target="_blank" href="//nlrr.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-【2019】纯小白部署Hexo博客-（二）修改主题模板" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      【2019】纯小白部署Hexo博客-（二）修改主题模板
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/hexo/">hexo</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-11-08
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p> 一个好看的模板，能让你的博客锦上添花，也使人赏心悦目。至于模板好看不好看，那就萝卜白菜，各有所爱了~</p>
+<a id="more"></a>
+
+
+
+<p>我是自己随便找了一个模板，个人感觉挺简单的，所以就随便改了改。打开HEXO官网，找到主题选项<a href="https://hexo.io/themes/" target="_blank" rel="noopener">点我直达</a>，从里边选择自己喜欢的。点图看效果，点字找源码。</p>
+<p>经过一番筛选，我选择了自己感觉还行的主题MiHo</p>
+<p><a href="https://blog.minhow.com/" target="_blank" rel="noopener">主题效果</a> <a href="https://github.com/WongMinHo/hexo-theme-miho" target="_blank" rel="noopener">主题源码</a></p>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>打开主题源码，作者有详细的介绍，如何去安装这个主题，包括如何设置这个主题。</p>
+<p>跟随者作者的脚步，来试试吧。</p>
+<p>原文是英文的，如果你的英语（PinYin）水平不怎么样的话，请自觉点击<a href="https://blog.minhow.com/articles/blog/installation-configuration/" target="_blank" rel="noopener">中文版</a></p>
+<h4 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h4><pre><code>$ git clone https://github.com/WongMinHo/hexo-theme-miho.git themes/miho</code></pre><h4 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h4><p>DownloadZip，解压至你的博客文件下的themes文件夹里边，并改名为miho。我太笨，所以用第二种方法。</p>
+<p><img src="https://i.loli.net/2019/11/09/IHkMUGB6ScsjO8o.png" alt="1.下载主题压缩包.png"> </p>
+<p><img src="https://i.loli.net/2019/11/09/y4tLvGUw3B7dJIT.png" alt="2.放入theres文件夹并改名.png"></p>
+<h2 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h2><p>在博客文件夹根目录下，打开<code>_config.yml</code>（建议用Notepad++打开），修改<code>theme: miho</code>（miho就是你的文件夹名）</p>
+<p><img src="https://i.loli.net/2019/11/09/7w8YZBWTGivK4uF.png" alt="3.根目录下的配置文件.png"></p>
+<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>对于主题里的_config.yml配置，我在这里就不多说了，因为作者已经讲得很清楚了。请参照作者的说明文件中文版。</p>
+<p><img src="https://i.loli.net/2019/11/09/pzKcjRlDmhE9Ieb.png" alt="4.主题目录下的配置文件.png"></p>
+<p>在这里给大家顺便说一下，如何修改logo和自己的二维码。</p>
+<p>最简单的方法，找到他的logo和二维码的图片位置，记住这三个图片的尺寸大小和文件类型</p>
+<p>例如：图片位置都在<code>MyBlog\themes\miho\source\images</code>文件夹下，logo是png格式，两个二维码是jpg格式，直接用原来的文件名，替换成你自己的图片就行了。</p>
+<blockquote>
+<p>logo.png （120 × 120）（首页LOGO）</p>
+<p>banner.jpeg（1920*420）（首页Banner）</p>
+<p>alipay_code.jpg （200 × 200）（支付宝二维码）</p>
+<p>wechat_code.jpg （200 × 200）（微信收款二维码）</p>
+</blockquote>
+<p>还有一个单独的ico文件</p>
+<blockquote>
+<p>MyBlog\themes\miho\source\favicon.ico （32 × 32）（浏览器的ICO图标）</p>
+</blockquote>
+<p>直接把这四个文件，替换成你自己的图片就行了，记住还用原来的文件名，还在原来的位置，最好还是原来的像素大小。</p>
+<p>然后可以在git命令窗口下，重新生成，看看效果。</p>
+<pre><code>$hexo clean 
+$hexo generate
+$hexo server</code></pre><p>然后，等一会儿就能看到你修改后的博客页面了。</p>
+<p><img src="https://i.loli.net/2019/11/09/rsO5bhZA2JuWC4H.png" alt="5.修改图片后的效果.png"></p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年11月11日 22:14</p>
+        <p>原始链接： <a class="post-url" href="/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/" title="【2019】纯小白部署Hexo博客-（二）修改主题模板">http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/</a></p>
+        <footer>
+            <a href="http://nlrr.github.io">
+                <img src="/images/logo.png" alt="NLRR">
+                NLRR
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" target="_blank" rel="noopener" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/&title=《【2019】纯小白部署Hexo博客-（二）修改主题模板》 — NLRR'S Blog&pic=/images/banner.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/&title=《【2019】纯小白部署Hexo博客-（二）修改主题模板》 — NLRR'S Blog&source= 一个好看的模板，能让你的博客锦上添花，也使人赏心悦目。至于模板好看不好看，那就萝卜白菜，各有所爱了~" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【2019】纯小白部署Hexo博客-（二）修改主题模板》 — NLRR'S Blog&url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/&via=http://nlrr.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://nlrr.github.io/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/hexo/" class="color5">hexo</a>
+      
+    <a href="/tags/github/" class="color2">github</a>
+      
+    <a href="/tags/blog/" class="color5">blog</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装主题"><span class="post-toc-text">安装主题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#方式一"><span class="post-toc-text">方式一</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#方式二"><span class="post-toc-text">方式二</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启用主题"><span class="post-toc-text">启用主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修改主题"><span class="post-toc-text">修改主题</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%B8%89%EF%BC%89%E5%8F%91%E5%B8%83%E5%88%B0Github/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          【2019】纯小白部署Hexo博客-（三）发布到Github
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2019/11/08/%E3%80%902019%E3%80%91%E7%BA%AF%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2-%EF%BC%88%E4%BA%94%EF%BC%89%E6%8D%A2%E7%94%B5%E8%84%91%E4%B9%9F%E8%A6%81%E7%BB%AD%E5%86%99%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【2019】纯小白部署Hexo博客-（五）换电脑也要续写博客</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 NLRR<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://nlrr.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/hexo/">hexo</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+        </div>
+    </div>
+    <a href="javascript:;" target="_blank" rel="noopener" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;" target="_blank" rel="noopener">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
